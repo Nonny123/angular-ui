@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DemoComponent } from './demo.component';
+import { IgxGridModule } from 'igniteui-angular';
 
 
 
@@ -9,7 +10,8 @@ import { DemoComponent } from './demo.component';
     DemoComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    IgxGridModule
   ]
 })
 export class DemoModule { }

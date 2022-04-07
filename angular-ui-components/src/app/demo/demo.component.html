@@ -1,1 +1,16 @@
-<p>demo works!</p>
+<div style="text-align:center; margin-bottom: 20px;">
+    <h4>
+      {{title}}
+    </h4>
+  </div>
+  
+  <div style="text-align: center;">
+    <igx-grid [data]="localData" width="1000px" height="460px" style="margin: auto" 
+    [autoGenerate]="false">
+    <igx-column width="190px" field="productId" header="Id" dataType="string"></igx-column>
+    <igx-column width="190px" field="productName" header="Title" dataType="string"></igx-column>
+    <igx-column width="190px" field="productCode" header="Code" dataType="string"></igx-column>
+    <igx-column width="190px" field="description" header="Description" dataType="string"></igx-column>
+    <igx-column width="190px" field="price" header="Price" dataType="string"></igx-column>
+    </igx-grid>
+  </div>
